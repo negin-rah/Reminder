@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ac_main_margin_items_top" >10dp</dimen>
+    <dimen name="ac_main_margin_items_bottom" >10dp</dimen>
+    <dimen name="ac_main_margin_items_right" >20dp</dimen>
+    <dimen name="ac_main_margin_items_left" >20dp</dimen>
+    <dimen name="ac_main_elevation_items" >15dp</dimen>
+
+</resources>
