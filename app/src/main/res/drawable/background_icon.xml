@@ -4,10 +4,10 @@
 
 
     <solid
-        android:color="#B3B3B3"/>
+        android:color="#A3A1A1"/>
 
     <corners
-        android:radius="7dp"
+        android:radius="11dp"
         />
 
 
