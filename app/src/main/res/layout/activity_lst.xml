@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layRoot"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:background="@drawable/background_main_negin"
+    android:orientation="vertical"
+
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".activity.MainActivity">
+
+        <ImageView
+            android:id="@+id/imgAttention"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/circleLight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="19dp"
+        android:layout_weight=".5"
+
+        android:orientation="horizontal"
+        tools:context=".activity.MainActivity">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_weight=".33"
+            android:text="Date :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_weight=".33"
+            android:text="Time :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_weight=".33"
+            android:text="Description :"
+            android:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout>

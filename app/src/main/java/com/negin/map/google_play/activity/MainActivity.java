@@ -5,9 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.negin.map.google_play.R;
 import com.negin.map.google_play.model.ReminderTypeOption;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
     ViewGroup layCelebration;
     ViewGroup LayShopping;
     ViewGroup layPersonal;
+
+    List<ReminderModel> rowList;
+    ListView lstPerson;
+    ReminderAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
         initClick();
 
         //negin
+
+        lstPerson = findViewById(R.id.lstPersonal);
+
+        adapter = new ReminderAdapter(this, R.layout.activity_lst, rowList);
+
+        lstPerson.setAdapter(adapter);
+
+        adapter.notifyDataSetChanged();
+
+
 
     }
 
