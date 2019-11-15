@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_main"
+    android:background="@drawable/background_main_negin"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".activity.MainActivity"
 
     >
 
@@ -25,7 +25,6 @@
             android:layout_height="88dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@drawable/background_icon"
             android:gravity="center"
             android:text="Categories"
             android:textColor="#000000"
@@ -56,10 +55,10 @@
             android:id="@+id/layPersonal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
-            android:layout_marginTop="@dimen/ac_main_margin_items_top"
-            android:layout_marginRight="@dimen/ac_main_margin_items_right"
             android:layout_marginBottom="@dimen/ac_main_margin_items_bottom"
+            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
+            android:layout_marginRight="@dimen/ac_main_margin_items_right"
+            android:layout_marginTop="@dimen/ac_main_margin_items_top"
             android:layout_weight=".5"
             android:background="@drawable/background_icon"
             android:elevation="@dimen/ac_main_elevation_items"
@@ -69,9 +68,10 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="52dp"
-                android:layout_height="45dp"
-                app:srcCompat="@drawable/userr" />
+                android:layout_width="45dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/person" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -88,10 +88,10 @@
             android:id="@+id/layWork"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
-            android:layout_marginTop="@dimen/ac_main_margin_items_top"
-            android:layout_marginRight="@dimen/ac_main_margin_items_right"
             android:layout_marginBottom="@dimen/ac_main_margin_items_bottom"
+            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
+            android:layout_marginRight="@dimen/ac_main_margin_items_right"
+            android:layout_marginTop="@dimen/ac_main_margin_items_top"
             android:layout_weight=".5"
             android:background="@drawable/background_icon"
             android:elevation="@dimen/ac_main_elevation_items"
@@ -99,9 +99,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="66dp"
-                android:layout_height="45dp"
+                android:id="@+id/imageView3"
+                android:layout_width="45dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="7dp"
                 app:srcCompat="@drawable/work" />
 
             <TextView
@@ -126,13 +127,13 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/laySecret"
+            android:id="@+id/layPriority"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
-            android:layout_marginTop="@dimen/ac_main_margin_items_top"
-            android:layout_marginRight="@dimen/ac_main_margin_items_right"
             android:layout_marginBottom="@dimen/ac_main_margin_items_bottom"
+            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
+            android:layout_marginRight="@dimen/ac_main_margin_items_right"
+            android:layout_marginTop="@dimen/ac_main_margin_items_top"
             android:layout_weight=".5"
             android:background="@drawable/background_icon"
             android:elevation="@dimen/ac_main_elevation_items"
@@ -140,17 +141,18 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="62dp"
+                android:id="@+id/imageView4"
+                android:layout_width="45dp"
                 android:layout_height="60dp"
-                app:srcCompat="@drawable/secret" />
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/priority" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Secret"
+                android:text="Priority"
                 android:textColor="#000000"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -160,10 +162,10 @@
             android:id="@+id/layUniversity"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
-            android:layout_marginTop="@dimen/ac_main_margin_items_top"
-            android:layout_marginRight="@dimen/ac_main_margin_items_right"
             android:layout_marginBottom="@dimen/ac_main_margin_items_bottom"
+            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
+            android:layout_marginRight="@dimen/ac_main_margin_items_right"
+            android:layout_marginTop="@dimen/ac_main_margin_items_top"
             android:layout_weight=".5"
             android:background="@drawable/background_icon"
             android:elevation="@dimen/ac_main_elevation_items"
@@ -171,17 +173,18 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="60dp"
+                android:id="@+id/imageView5"
+                android:layout_width="45dp"
                 android:layout_height="60dp"
-                app:srcCompat="@drawable/education" />
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/university" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Education"
+                android:text="University"
                 android:textColor="#000000"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -200,10 +203,10 @@
             android:id="@+id/layCelebration"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
-            android:layout_marginTop="@dimen/ac_main_margin_items_top"
-            android:layout_marginRight="@dimen/ac_main_margin_items_right"
             android:layout_marginBottom="@dimen/ac_main_margin_items_bottom"
+            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
+            android:layout_marginRight="@dimen/ac_main_margin_items_right"
+            android:layout_marginTop="@dimen/ac_main_margin_items_top"
             android:layout_weight=".5"
             android:background="@drawable/background_icon"
             android:elevation="@dimen/ac_main_elevation_items"
@@ -211,10 +214,11 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="62dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/holiday" />
+                android:id="@+id/imageView6"
+                android:layout_width="45dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/celebration" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -232,10 +236,10 @@
             android:id="@+id/LayShopping"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
-            android:layout_marginTop="@dimen/ac_main_margin_items_top"
-            android:layout_marginRight="@dimen/ac_main_margin_items_right"
             android:layout_marginBottom="@dimen/ac_main_margin_items_bottom"
+            android:layout_marginLeft="@dimen/ac_main_margin_items_left"
+            android:layout_marginRight="@dimen/ac_main_margin_items_right"
+            android:layout_marginTop="@dimen/ac_main_margin_items_top"
             android:layout_weight=".5"
             android:background="@drawable/background_icon"
             android:elevation="@dimen/ac_main_elevation_items"
@@ -243,10 +247,11 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="58dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/shopping" />
+                android:id="@+id/imageView7"
+                android:layout_width="45dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/shop" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -265,8 +270,5 @@
         android:layout_height="0dp"
         android:layout_weight=".1"
         android:orientation="vertical"></LinearLayout>
-
-
-
 
 </LinearLayout>
