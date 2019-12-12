@@ -32,23 +32,21 @@ public class ReminderAdapter<resource, context, row> extends ArrayAdapter<Remind
             convertView = inf.inflate(R.layout.activity_lst, null, false);
 
         }
-            LinearLayout layRoot = convertView.findViewById(R.id.layRoot);
-            TextView txtDate = convertView.findViewById(R.id.txtDate);
-            TextView txtTime = convertView.findViewById(R.id.txtTime);
-            TextView txtDescription = convertView.findViewById(R.id.txtDescription);
+        LinearLayout layRoot = convertView.findViewById(R.id.layRoot);
+        TextView txtDate = convertView.findViewById(R.id.txtDate);
+        TextView txtTime = convertView.findViewById(R.id.txtTime);
+        TextView txtDescription = convertView.findViewById(R.id.txtDescription);
 
 
-            ReminderModel reminder = row.get(position);
-            txtDate.setText(reminder.fDate + " " + reminder.fDate);
-            txtTime.setText(reminder.fTime + " " + reminder.fTime);
-            txtDescription.setText(reminder.fDescription + " " + reminder.fDescription);
-            ImageView imgAttention = null;
-            imgAttention.setImageResource(reminder.attention);
+        ReminderModel reminder = row.get(position);
+        txtDate.setText(reminder.fDate + " " + reminder.fDate);
+        txtTime.setText(reminder.fTime + " " + reminder.fTime);
+        txtDescription.setText(reminder.fDescription + " " + reminder.fDescription);
+        ImageView imgAttention = null;
+        imgAttention.setImageResource(reminder.attention);
 
-
-        }
 
     }
 
 
-
+    }
